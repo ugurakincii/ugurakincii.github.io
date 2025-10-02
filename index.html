@@ -3,88 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>akinciugur.com</title>
+  <title>Ugur's Vintage Blog</title>
   <style>
-    body {
-      background-color: #eeeeee;
-      color: #000;
-      font-family: Georgia, serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: #ffffff;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    }
-    header {
-      padding: 20px 0;
-      border-bottom: 1px solid #ddd;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
-    }
-    article {
-      margin: 30px 0;
-    }
-    article h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    article time {
-      font-size: 12px;
-      color: #666;
-    }
-    article p {
-      line-height: 1.6;
-    }
-    footer {
-      font-size: 12px;
-      color: #999;
-      padding: 20px 0;
-      text-align: center;
-    }
+    /* Simple 90s look: centered table layout, bright background, chunky borders */
+    body { background: #4fc3f7; font-family: 'Times New Roman', Times, serif; color: #000; }
+    .frame { width: 760px; margin: 20px auto; border: 4px solid #000; background: #fff; }
+    .header { background: linear-gradient(#ffffcc,#ffd); padding: 8px; border-bottom: 2px solid #000; }
+    .title { font-size: 28px; margin: 0; }
+    .nav { background: #c0e4ff; padding: 6px; border-top: 2px solid #000; border-bottom: 2px solid #000; }
+    .nav a { margin-right: 12px; color: #000; text-decoration: none; font-weight: bold; }
+    .content { padding: 12px; }
+    .post { border: 2px dotted #999; padding: 10px; margin-bottom: 12px; background: #fffdf5; }
+    .post h2 { margin: 0 0 6px 0; font-size: 20px; }
+    .meta { font-size: 12px; color: #555; }
+    .photo { float: right; margin-left: 10px; border: 2px solid #000; padding: 4px; background: #fff; }
+    .footer { text-align: center; padding: 8px; font-size: 13px; background: #eee; border-top: 2px solid #000; }
+    /* Tiny 90s button style */
+    .btn { display:inline-block; padding:4px 8px; border:2px outset #ddd; background:#eee; text-decoration:none; color:#000; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>akinciugur.com</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Archive</a>
-      </nav>
-    </header>
+  <table class="frame" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <div class="header">
+          <marquee behavior="scroll" direction="left">Welcome to Ugur's Cozy Corner — raw opinions & photos from the early web</marquee>
+          <h1 class="title">Ugur Akinci</h1>
+        </div>
+        <div class="nav">
+          <a class="btn" href="#">Home</a>
+          <a class="btn" href="#">About</a>
+          <a class="btn" href="#">Archive</a>
+          <a class="btn" href="#">Contact</a>
+        </div>
+        <div class="content">
+          <div class="post">
+            <img class="photo" width="220" height="140" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='140'><rect width='100%25' height='100%25' fill='%23f0e6d6'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Courier New, monospace' font-size='14' fill='%23666'>Drop a photo in /photos</text></svg>" alt="photo placeholder">
+            <h2>First thoughts — the old web feels different</h2>
+            <div class="meta">October 3, 2025 — by Ugur</div>
+            <p>I like small pages, clear words, and a few photos. This site is intentionally simple, like pages from the 1990s: table layout, bright background, and a marquee.</p>
+            <p>Share your opinion below or drop images into a <code>/photos</code> folder and link them here.</p>
+          </div>
 
-    <article>
-      <h2><a href="#">Apple’s WWDC Rumors Heating Up</a></h2>
-      <time>May 27, 2025</time>
-      <p>Interesting take: the M4 chips might debut earlier than expected, according to recent supply chain reports.</p>
-      <p>— Ugur Akinci</p>
-    </article>
+          <div class="post">
+            <h2>Short note: why I write</h2>
+            <div class="meta">September 30, 2025</div>
+            <p>I write to keep a log of ideas. Expect short posts and snapshots — nothing overengineered.</p>
+          </div>
 
-    <article>
-      <h2><a href="#">Why Simplicity Beats Performance in Engineering</a></h2>
-      <time>May 26, 2025</time>
-      <p>Good design is often less about speed, more about control. Let’s talk about API architecture and what not to over-optimize.</p>
-    </article>
-
-    <footer>
-      &copy; 2025 Ugur Akinci. All rights reserved.
-    </footer>
-  </div>
+        </div>
+        <div class="footer">&copy; 2025 Ugur Akinci — retro personal blog</div>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
